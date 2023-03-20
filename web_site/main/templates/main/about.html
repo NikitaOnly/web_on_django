@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+<h1>About study</h1>
+{% for el in about_s %}
+<div class="alert alert-warning mt-2">
+<h3>{{el.description}}</h3>
+    <p>{{el.amount}}</p>
+</div>
+{% endfor %}
+{% endblock %}
+
+
+

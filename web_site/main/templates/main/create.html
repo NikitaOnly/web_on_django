@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Create a new page
+{% endblock %}
+
+{% block content %}
+<div class="alert alert-warning mt-2">
+    <h1>Page About Us</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{form.title}}<br>
+    {{form.task}}<br>
+    <button type="submit" class="btn btn-success">Enter</button>
+    <span>{{ error }}</span>
+        </form>
+</div>
+
+
+{% endblock %}
